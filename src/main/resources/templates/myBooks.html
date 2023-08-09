@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Book Store</title>
+    <title>Available Book List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
-  <!--  navigation bar-->
+	
+	
+	
  <nav class="navbar navbar-expand-sm  bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="/">Book Store</a>
@@ -16,15 +18,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">	
-          <a class="nav-link active text-white" aria-current="page" href="/"> <b>Home</b> </a>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="available_books">Available Books</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link text-white" href="my_books">My Books</a>
+          <a class="nav-link text-white" href="my_books" style="color:red"><b>My Books </b></a>
         </li>
         
       </ul>
@@ -36,15 +38,34 @@
     </div>
   </div>
 </nav>
-    
-    
-    <div class="container text-center my-5">
-    	<h1>Welcome To City Light Books</h1>
-    	<H6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe modi ipsum eaque ipsam? Ullam facilis vel necessitatibus, accusantium, veritatis ducimus hic atque rem quod voluptatibus architecto! Iste iusto, eos nostrum obcaecati ut adipisci quibusdam nisi corporis non harum eum illo saepe ratione dicta ab, quis nam! Suscipit expedita culpa, quae id repudiandae odio numquam iste? Dicta explicabo perferendis dolores officiis fugit, impedit obcaecati debitis similique quibusdam ipsa odio, provident culpa deserunt nesciunt quisquam sit cupiditate laudantium nemo blanditiis nam? Amet aspernatur pariatur tempora quos minima eligendi adipisci saepe veritatis unde nostrum fugit molestiae nemo neque, consequuntur libero aliquid, cupiditate id laboriosam suscipit veniam distinctio atque iste doloremque. Illo, nisi at velit cum beatae magnam error, debitis, eos voluptas quis corrupti?</H6>
-   		 <h6>
-            <img src="/images/bookstore.jpg" width="350px"  alt="">
-        </h6>
+	
+	
+	<div class="container col-md-6 my-5">
+        <!-- <h1>Hie</h1> -->
+        <table class="table table-striped table-hover ">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Author</th>
+              <th scope="col">Price</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+           <!-- <tr th:each = "b :${book}">
+	            <th scope="row">1</th>
+	            <td th:text="${b.id}"></td>
+	            <td th:text="${b.name}"></td>
+	            <td th:text="${b.author}"></td>
+	            <td th:text="${b.price}"></td>
+	            <td><a class="btn btn-success btn-sm">Add to MyBooks</a></td>
+            </tr> -->
+          </tbody>
+        </table>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
